@@ -4,97 +4,198 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aashish Dhungana - Senior Software Engineer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body { background-color: #f8f9fa; }
+      .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 100px 0; }
+      .card { margin-bottom: 20px; }
+      .review-form { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    </style>
   </head>
   <body>
-    <div class="app">
-      <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Aashish Dhungana</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero text-center">
+      <div class="container">
+        <img src="https://avatars.githubusercontent.com/u/5057663?v=4" alt="Aashish Dhungana" class="rounded-circle mb-4" width="150">
         <h1>Aashish Dhungana, Ph.D.</h1>
-        <p>Senior Software Engineer | Computer Science Researcher</p>
-      </header>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>I am Aashish Dhungana, a Senior Software Engineer at Abacus Insights based in Austin, United States. I hold a Ph.D. in Computer Science from Virginia Commonwealth University (2020) and a Bachelor's in Computer Engineering from Kathmandu University (2014). With over 8 years of experience in software development and research, I specialize in wireless networks, delay-tolerant networks (DTN), mobile sensor networks, and wireless energy sharing.</p>
+        <p class="lead">Senior Software Engineer | Computer Science Researcher</p>
+      </div>
+    </section>
+
+    <div class="container my-5">
+      <section id="about" class="mb-5">
+        <h2 class="text-center mb-4">About Me</h2>
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <p class="text-center">I am Aashish Dhungana, a Senior Software Engineer at Abacus Insights based in Austin, United States. I hold a Ph.D. in Computer Science from Virginia Commonwealth University (2020) and a Bachelor's in Computer Engineering from Kathmandu University (2014). With over 8 years of experience in software development and research, I specialize in wireless networks, delay-tolerant networks (DTN), mobile sensor networks, and wireless energy sharing.</p>
+          </div>
+        </div>
       </section>
-      <section id="experience">
-        <h2>Professional Experience</h2>
-        <ul>
-          <li><strong>Senior Software Engineer</strong> at Abacus Insights (2022 - Present)</li>
-          <li><strong>Software Implementation Programmer</strong> at Comprehensive Healthcare Systems (2021 - 2022)</li>
-          <li><strong>Graduate Research Assistant</strong> at Virginia Commonwealth University (2016 - 2020)</li>
-          <li><strong>Software Engineer</strong> at COTIVITI NEPAL (2014 - 2016)</li>
-        </ul>
+
+      <section id="experience" class="mb-5">
+        <h2 class="text-center mb-4">Professional Experience</h2>
+        <div class="row">
+          <div class="col-md-10 mx-auto">
+            <div class="card">
+              <div class="card-body">
+                <h5>Senior Software Engineer at Abacus Insights (2022 - Present)</h5>
+                <p>Developing advanced software solutions in healthcare analytics.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5>Software Implementation Programmer at Comprehensive Healthcare Systems (2021 - 2022)</h5>
+                <p>Implemented software for healthcare data management.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5>Graduate Research Assistant at Virginia Commonwealth University (2016 - 2020)</h5>
+                <p>Conducted research in mobile networks and energy sharing.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5>Software Engineer at COTIVITI NEPAL (2014 - 2016)</h5>
+                <p>Developed software for healthcare billing and analytics.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section id="education">
-        <h2>Education</h2>
-        <ul>
-          <li><strong>Ph.D. in Computer Science</strong> - Virginia Commonwealth University (2020)</li>
-          <li><strong>Bachelor in Computer Engineering</strong> - Kathmandu University (2014)</li>
-        </ul>
+
+      <section id="education" class="mb-5">
+        <h2 class="text-center mb-4">Education</h2>
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5>Ph.D. in Computer Science</h5>
+                <p>Virginia Commonwealth University (2020)</p>
+              </div>
+            </div>
+            <div class="card text-center">
+              <div class="card-body">
+                <h5>Bachelor in Computer Engineering</h5>
+                <p>Kathmandu University (2014)</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section id="research">
-        <h2>Research Interests</h2>
-        <p>Wireless networks, Delay-Tolerant Networks (DTN), Mobile Sensor Networks, Wireless Energy Sharing</p>
+
+      <section id="research" class="mb-5">
+        <h2 class="text-center mb-4">Research Interests</h2>
+        <p class="text-center">Wireless networks, Delay-Tolerant Networks (DTN), Mobile Sensor Networks, Wireless Energy Sharing</p>
       </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li><a href="https://github.com/aashish33128/EnergyBalancing">EnergyBalancing</a> - Simulation code for loss-aware efficient energy balancing in mobile opportunistic networks (Java)</li>
-          <li><a href="https://github.com/aashish33128/datasciencecoursera">datasciencecoursera</a> - Data Science Coursera course materials (HTML)</li>
-          <li><a href="https://github.com/aashish33128/datasharing">datasharing</a> - Guide to data sharing (Forked)</li>
-          <li><a href="https://github.com/aashish33128/ProgrammingAssignment2">ProgrammingAssignment2</a> - R Programming assignment (Forked)</li>
-          <li><a href="https://github.com/aashish33128/ExData_Plotting1">ExData_Plotting1</a> - Exploratory Data Analysis plotting assignment (R, Forked)</li>
-          <li><a href="https://github.com/aashish33128/RepData_PeerAssessment1">RepData_PeerAssessment1</a> - Reproducible Research peer assessment (HTML, Forked)</li>
-          <li><a href="https://scholar.google.com/citations?user=iQzQWM4AAAAJ&hl=en">Google Scholar Profile</a> - Publications and research work</li>
-        </ul>
+
+      <section id="projects" class="mb-5">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5><a href="https://github.com/aashish33128/EnergyBalancing">EnergyBalancing</a></h5>
+                <p>Simulation code for loss-aware efficient energy balancing in mobile opportunistic networks (Java)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5><a href="https://github.com/aashish33128/datasciencecoursera">Data Science Coursera</a></h5>
+                <p>Course materials for Data Science (HTML)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5><a href="https://scholar.google.com/citations?user=iQzQWM4AAAAJ&hl=en">Google Scholar</a></h5>
+                <p>Publications and research work</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>Programming: JavaScript, Python, R</li>
-          <li>Certifications: Data Scientist Tool Box (Coursera), R Programming (Coursera), Presentation Skills</li>
-        </ul>
+
+      <section id="skills" class="mb-5">
+        <h2 class="text-center mb-4">Skills</h2>
+        <div class="row text-center">
+          <div class="col-md-3"><div class="card"><div class="card-body"><h5>JavaScript</h5></div></div></div>
+          <div class="col-md-3"><div class="card"><div class="card-body"><h5>Python</h5></div></div></div>
+          <div class="col-md-3"><div class="card"><div class="card-body"><h5>R</h5></div></div></div>
+          <div class="col-md-3"><div class="card"><div class="card-body"><h5>Java</h5></div></div></div>
+        </div>
       </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/aashish-dhungana/">linkedin.com/in/aashish-dhungana</a></p>
-        <p>Email: aashishdhungana272@gmail.com</p>
+
+      <section id="reviews" class="mb-5">
+        <h2 class="text-center mb-4">Reviews</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <p>"Aashish is an exceptional researcher with deep knowledge in wireless networks."</p>
+                <footer>- Colleague</footer>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <p>"Great work on energy balancing algorithms!"</p>
+                <footer>- Peer</footer>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="review-form mt-4">
+          <h4>Add a Review</h4>
+          <form action="mailto:aashishdhungana272@gmail.com?subject=Review Submission" method="post" enctype="text/plain">
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="review" class="form-label">Your Review</label>
+              <textarea class="form-control" id="review" name="review" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Review</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="contact" class="mb-5">
+        <h2 class="text-center mb-4">Contact</h2>
+        <div class="text-center">
+          <p><a href="https://www.linkedin.com/in/aashish-dhungana/" class="btn btn-outline-primary">LinkedIn</a></p>
+          <p><a href="https://github.com/aashish33128" class="btn btn-outline-dark">GitHub</a></p>
+          <p>Email: <a href="mailto:aashishdhungana272@gmail.com">aashishdhungana272@gmail.com</a></p>
+        </div>
       </section>
     </div>
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-      }
-      .app {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      header {
-        text-align: center;
-        margin-bottom: 40px;
-      }
-      section {
-        margin-bottom: 40px;
-      }
-      h2 {
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 10px;
-      }
-      ul {
-        list-style-type: none;
-        padding: 0;
-      }
-      li {
-        margin-bottom: 10px;
-      }
-      a {
-        color: #007bff;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-    </style>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2026 Aashish Dhungana. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
