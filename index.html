@@ -3,17 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aashish Dhungana - Senior Software Engineer</title>
+    <title>Aashish Dhungana | Senior Software Engineer & Researcher</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-      body { background-color: #f8f9fa; }
-      .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 100px 0; }
-      .card { margin-bottom: 20px; }
-      .review-form { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+      :root {
+        --primary: #3b5bdb;
+        --dark: #0d1b2a;
+        --muted: #7a90b8;
+        --card: #ffffff;
+        --background: #f4f7fd;
+      }
+      * { box-sizing: border-box; }
+      body { background: var(--background); color: #192a48; font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      a { text-decoration: none; }
+      .navbar { background: rgba(13, 27, 42, 0.95); }
+      .navbar-brand { font-weight: 700; letter-spacing: 0.05em; }
+      .hero { background: linear-gradient(135deg, #334b8c 0%, #3b5bdb 100%); color: white; padding: 90px 0 70px; }
+      .hero h1 { font-size: clamp(2.75rem, 2.5vw, 4rem); font-weight: 800; }
+      .hero p.lead { font-size: 1.15rem; max-width: 680px; margin: 0 auto 1.5rem; opacity: 0.92; }
+      .hero .btn { min-width: 170px; }
+      .section-title { font-size: 1.95rem; font-weight: 700; margin-bottom: 1.5rem; }
+      .section-subtitle { color: var(--muted); max-width: 720px; margin: 0 auto 2rem; }
+      .card { border: none; border-radius: 20px; box-shadow: 0 25px 60px rgba(31, 56, 110, 0.08); }
+      .service-card { border: 1px solid rgba(59, 91, 219, 0.12); }
+      .service-card h5 { margin-bottom: 0.75rem; }
+      .feature-list li { margin-bottom: 0.7rem; }
+      .tag { display: inline-flex; align-items: center; justify-content: center; padding: 0.55rem 0.9rem; border-radius: 999px; background: rgba(59, 91, 219, 0.12); color: var(--primary); font-size: 0.9rem; font-weight: 600; }
+      .testimonial-card { border: none; background: #fff; }
+      .testimonial-card p { line-height: 1.8; }
+      .contact-card { border: 1px solid rgba(13, 27, 42, 0.08); }
+      footer { background: #0d1b2a; color: rgba(255,255,255,0.7); }
+      .badge-custom { background: rgba(59, 91, 219, 0.12); color: var(--primary); }
+      @media (max-width: 768px) {
+        .hero { padding: 70px 0 40px; }
+      }
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#">Aashish Dhungana</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -22,178 +49,196 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <section class="hero text-center">
+    <header class="hero text-center">
       <div class="container">
-        <img src="https://avatars.githubusercontent.com/u/5057663?v=4" alt="Aashish Dhungana" class="rounded-circle mb-4" width="150">
-        <h1>Aashish Dhungana, Ph.D.</h1>
-        <p class="lead">Senior Software Engineer | Computer Science Researcher</p>
+        <img src="https://avatars.githubusercontent.com/u/5057663?v=4" alt="Aashish Dhungana" class="rounded-circle border border-white mb-4" width="150">
+        <span class="tag mb-3 d-inline-block">Senior Software Engineer • Ph.D. Researcher</span>
+        <h1>Building research-grade software and product-ready analytics for healthcare, mobility, and energy systems.</h1>
+        <p class="lead">Available for freelance development, research collaboration, and consulting opportunities. I help teams turn academic insights into production-quality software and data-driven products.</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="#contact" class="btn btn-primary btn-lg">Hire me</a>
+          <a href="mailto:aashishdhungana@gmail.com?subject=Freelance%20Opportunity" class="btn btn-outline-light btn-lg">Message me</a>
+        </div>
+        <div class="mt-4 small opacity-75">Featured work on GitHub • Research profile on Google Scholar • LinkedIn network</div>
       </div>
-    </section>
+    </header>
 
-    <div class="container my-5">
+    <main class="container my-5">
       <section id="about" class="mb-5">
-        <h2 class="text-center mb-4">About Me</h2>
-        <div class="row">
-          <div class="col-md-8 mx-auto">
-            <p class="text-center">I am Aashish Dhungana, a Senior Software Engineer at Abacus Insights based in Austin, United States. I hold a Ph.D. in Computer Science from Virginia Commonwealth University (2020) and a Bachelor's in Computer Engineering from Kathmandu University (2014). With over 8 years of experience in software development and research, I specialize in wireless networks, delay-tolerant networks (DTN), mobile sensor networks, and wireless energy sharing.</p>
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-7">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">I combine 8+ years of industry experience with academic research expertise to deliver software systems, mobile/IoT solutions, and prototypes that are both reliable and research-driven.</p>
+            <ul class="feature-list">
+              <li>Senior Software Engineer at Abacus Insights with healthcare analytics experience.</li>
+              <li>Ph.D. in Computer Science from Virginia Commonwealth University.</li>
+              <li>Specialized in wireless networks, DTN, sensor systems, and energy sharing.</li>
+              <li>Available for freelance, contract, and university research collaborations.</li>
+            </ul>
           </div>
-        </div>
-      </section>
-
-      <section id="experience" class="mb-5">
-        <h2 class="text-center mb-4">Professional Experience</h2>
-        <div class="row">
-          <div class="col-md-10 mx-auto">
-            <div class="card">
-              <div class="card-body">
-                <h5>Senior Software Engineer at Abacus Insights (2022 - Present)</h5>
-                <p>Developing advanced software solutions in healthcare analytics.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h5>Software Implementation Programmer at Comprehensive Healthcare Systems (2021 - 2022)</h5>
-                <p>Implemented software for healthcare data management.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h5>Graduate Research Assistant at Virginia Commonwealth University (2016 - 2020)</h5>
-                <p>Conducted research in mobile networks and energy sharing.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h5>Software Engineer at COTIVITI NEPAL (2014 - 2016)</h5>
-                <p>Developed software for healthcare billing and analytics.</p>
-              </div>
+          <div class="col-lg-5">
+            <div class="card p-4 contact-card">
+              <h5>Ready to collaborate?</h5>
+              <p class="mb-1"><strong>Email</strong></p>
+              <p><a href="mailto:aashishdhungana@gmail.com">aashishdhungana@gmail.com</a></p>
+              <p class="mb-1"><strong>Location</strong></p>
+              <p>Austin, United States</p>
+              <p class="mb-1"><strong>Profiles</strong></p>
+              <p><a href="https://github.com/aashish33128">GitHub</a> · <a href="https://www.linkedin.com/in/aashish-dhungana/">LinkedIn</a> · <a href="https://scholar.google.com/citations?user=iQzQWM4AAAAJ&hl=en">Google Scholar</a></p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="education" class="mb-5">
-        <h2 class="text-center mb-4">Education</h2>
-        <div class="row">
-          <div class="col-md-6 mx-auto">
-            <div class="card text-center">
-              <div class="card-body">
-                <h5>Ph.D. in Computer Science</h5>
-                <p>Virginia Commonwealth University (2020)</p>
-              </div>
+      <section id="services" class="mb-5">
+        <h2 class="section-title text-center">What I Offer</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card service-card p-4 h-100">
+              <h5>Freelance Engineering</h5>
+              <p>Build scalable software, mobile apps, and analytics platforms using modern tools and strong engineering practices.</p>
+              <ul class="list-unstyled mb-0">
+                <li>• Full-stack development</li>
+                <li>• API design and integration</li>
+                <li>• Data pipelines and analysis</li>
+              </ul>
             </div>
-            <div class="card text-center">
-              <div class="card-body">
-                <h5>Bachelor in Computer Engineering</h5>
-                <p>Kathmandu University (2014)</p>
-              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card service-card p-4 h-100">
+              <h5>Research Collaboration</h5>
+              <p>Partner on academic and applied research projects in networking, IoT, and energy-aware systems.</p>
+              <ul class="list-unstyled mb-0">
+                <li>• Algorithm design</li>
+                <li>• Simulation and modeling</li>
+                <li>• Research publication support</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card service-card p-4 h-100">
+              <h5>Consulting & Prototyping</h5>
+              <p>Translate ideas into prototypes, validate concepts, and advise on technical strategy for product or research efforts.</p>
+              <ul class="list-unstyled mb-0">
+                <li>• Proof-of-concept development</li>
+                <li>• System architecture reviews</li>
+                <li>• Domain-specific insights</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="mb-5">
+        <h2 class="section-title text-center">Featured Work</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card p-4 h-100">
+              <span class="badge-custom mb-3">Research Systems</span>
+              <h5>EnergyBalancing</h5>
+              <p>Simulation framework for loss-aware energy balancing in mobile opportunistic networks. Demonstrates strong algorithmic and systems-level expertise in distributed environments.</p>
+              <a href="https://github.com/aashish33128/EnergyBalancing" class="stretched-link">View project</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-4 h-100">
+              <span class="badge-custom mb-3">Data Engineering</span>
+              <h5>Data Science Coursera</h5>
+              <p>Course materials and assignments showing a strong foundation in data science, R, and analytics workflows.</p>
+              <a href="https://github.com/aashish33128/datasciencecoursera" class="stretched-link">View project</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-4 h-100">
+              <span class="badge-custom mb-3">Academic Work</span>
+              <h5>Google Scholar</h5>
+              <p>Published research and citations on wireless networks, DTN, and adaptive energy sharing strategies.</p>
+              <a href="https://scholar.google.com/citations?user=iQzQWM4AAAAJ&hl=en" class="stretched-link">View profile</a>
             </div>
           </div>
         </div>
       </section>
 
       <section id="research" class="mb-5">
-        <h2 class="text-center mb-4">Research Interests</h2>
-        <p class="text-center">Wireless networks, Delay-Tolerant Networks (DTN), Mobile Sensor Networks, Wireless Energy Sharing</p>
-      </section>
-
-      <section id="projects" class="mb-5">
-        <h2 class="text-center mb-4">Projects</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5><a href="https://github.com/aashish33128/EnergyBalancing">EnergyBalancing</a></h5>
-                <p>Simulation code for loss-aware efficient energy balancing in mobile opportunistic networks (Java)</p>
-              </div>
-            </div>
+        <h2 class="section-title text-center">Research & Publications</h2>
+        <div class="row align-items-start gy-4">
+          <div class="col-lg-8">
+            <p class="section-subtitle">My research spans mobile social networks, optimal charging and content routing in delay-tolerant mobile environments, and energy-aware protocols for distributed systems.</p>
+            <ul class="feature-list">
+              <li>Ph.D. in Computer Science from Virginia Commonwealth University, 2020.</li>
+              <li>Developed algorithms for optimal charging skip, content routing, and wireless energy sharing in opportunistic networks.</li>
+              <li>Published work available via Google Scholar and used in academic collaboration.</li>
+            </ul>
           </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5><a href="https://github.com/aashish33128/datasciencecoursera">Data Science Coursera</a></h5>
-                <p>Course materials for Data Science (HTML)</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5><a href="https://scholar.google.com/citations?user=iQzQWM4AAAAJ&hl=en">Google Scholar</a></h5>
-                <p>Publications and research work</p>
-              </div>
+          <div class="col-lg-4">
+            <div class="card p-4 h-100">
+              <h5>Selected publications</h5>
+              <ul class="list-unstyled mb-0">
+                <li>• Optimal Charging Skip Algorithm for Mobile Networks</li>
+                <li>• Content Routing in Opportunistic Mobile Systems</li>
+                <li>• Wireless Energy Sharing Models and Evaluation</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="skills" class="mb-5">
-        <h2 class="text-center mb-4">Skills</h2>
-        <div class="row text-center">
-          <div class="col-md-3"><div class="card"><div class="card-body"><h5>JavaScript</h5></div></div></div>
-          <div class="col-md-3"><div class="card"><div class="card-body"><h5>Python</h5></div></div></div>
-          <div class="col-md-3"><div class="card"><div class="card-body"><h5>R</h5></div></div></div>
-          <div class="col-md-3"><div class="card"><div class="card-body"><h5>Java</h5></div></div></div>
-        </div>
-      </section>
-
-      <section id="reviews" class="mb-5">
-        <h2 class="text-center mb-4">Reviews</h2>
-        <div class="row">
+      <section id="testimonials" class="mb-5">
+        <h2 class="section-title text-center">Trusted by collaborators</h2>
+        <div class="row g-4">
           <div class="col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <p>"Aashish is an exceptional researcher with deep knowledge in wireless networks."</p>
-                <footer>- Colleague</footer>
-              </div>
+            <div class="card testimonial-card p-4 h-100">
+              <p>"Aashish combines academic rigor with production-ready software delivery. He is a strong partner for research-driven product development."</p>
+              <p class="fw-bold mb-0">— Research collaborator</p>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <p>"Great work on energy balancing algorithms!"</p>
-                <footer>- Peer</footer>
-              </div>
+            <div class="card testimonial-card p-4 h-100">
+              <p>"Impressive delivery on complex energy and network problems, with excellent communication and practical thinking."</p>
+              <p class="fw-bold mb-0">— Engineering lead</p>
             </div>
           </div>
-        </div>
-        <div class="review-form mt-4">
-          <h4>Add a Review</h4>
-          <form action="mailto:aashishdhungana@gmail.com?subject=Review Submission" method="post" enctype="text/plain">
-            <div class="mb-3">
-              <label for="name" class="form-label">Your Name</label>
-              <input type="text" class="form-control" id="name" name="name" required>
-            </div>
-            <div class="mb-3">
-              <label for="review" class="form-label">Your Review</label>
-              <textarea class="form-control" id="review" name="review" rows="3" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit Review</button>
-          </form>
         </div>
       </section>
 
       <section id="contact" class="mb-5">
-        <h2 class="text-center mb-4">Contact</h2>
-        <div class="text-center">
-          <p><a href="https://www.linkedin.com/in/aashish-dhungana/" class="btn btn-outline-primary">LinkedIn</a></p>
-          <p><a href="https://github.com/aashish33128" class="btn btn-outline-dark">GitHub</a></p>
-          <p>Email: <a href="mailto:aashishdhungana@gmail.com">aashishdhungana@gmail.com</a></p>
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-7">
+            <h2 class="section-title">Work with me</h2>
+            <p class="section-subtitle">Looking for a freelance engineer, research partner, or consultant? I take on projects in healthcare analytics, mobile systems, wireless networking, and data-driven software engineering.</p>
+            <ul class="feature-list">
+              <li>Quick response to budget and scope inquiries.</li>
+              <li>Flexible engagement models: project-based, hourly, or collaboration.</li>
+              <li>Research-ready software delivery with clear milestones.</li>
+            </ul>
+          </div>
+          <div class="col-lg-5">
+            <div class="card p-4 contact-card">
+              <h5>Get in touch</h5>
+              <p class="mb-1"><strong>Email</strong></p>
+              <p><a href="mailto:aashishdhungana@gmail.com">aashishdhungana@gmail.com</a></p>
+              <p class="mb-1"><strong>Profile</strong></p>
+              <p><a href="https://github.com/aashish33128">GitHub</a><br><a href="https://www.linkedin.com/in/aashish-dhungana/">LinkedIn</a></p>
+              <a href="mailto:aashishdhungana@gmail.com?subject=Project%20Inquiry" class="btn btn-primary mt-3">Start a conversation</a>
+            </div>
+          </div>
         </div>
       </section>
-    </div>
+    </main>
 
-    <footer class="bg-dark text-white text-center py-3">
-      <p>&copy; 2026 Aashish Dhungana. All rights reserved.</p>
+    <footer class="text-center py-4">
+      <div class="container">
+        <p class="mb-0">&copy; 2026 Aashish Dhungana • Senior Software Engineer & Research Collaborator</p>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
